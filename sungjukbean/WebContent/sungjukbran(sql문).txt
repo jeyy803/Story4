@@ -1,0 +1,14 @@
+create table sungjuk(
+    sno      number not null primary key,   -- 일련번호
+    uname    varchar2(20),    -- 이름
+    kor      number not null,   -- 국어
+    eng      number not null,   -- 영어
+    mat      number not null,   -- 수학
+    aver     number,            -- 평균
+    addr     varchar2(50),    -- 주소
+    wdate    date            -- 작성일
+);
+
+create sequence sungjuk_seq;
+
+commit;

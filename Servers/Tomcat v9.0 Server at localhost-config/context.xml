@@ -28,16 +28,16 @@
     -->
     
 <Resource name="jdbc/myoracle"
-			auth = "Container"
-			type="javax.sql.DataSource"
-			driverClassName = "oracle.jdbc.driver.OracleDriver"
-			url = "jdbc:oracle:thin:@127.0.0.1:1521:xe"
-			username="mvcdb"
-			password="12345"
-			initialsize="5"
-			maxTotal="20"
-			maxIdle="10"
-			maxWaitMillis="-1"
-/>
-			
+           auth="Container"
+           type="javax.sql.DataSource"
+           driverClassName="oracle.jdbc.driver.OracleDriver"
+           url="jdbc:oracle:thin:@127.0.0.1:1521:xe" 
+           username="mvcdb"
+           password="12345"
+           initialsize="5"
+           maxTotal="20"
+           maxIdle="10"
+           maxWaitMillis="-1"       
+ />    
+     
 </Context>
