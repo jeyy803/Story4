@@ -17,7 +17,7 @@ int eng = Integer.parseInt(request.getParameter("eng").trim());
 int mat = Integer.parseInt(request.getParameter("mat").trim());
 String addr=request.getParameter("addr");
 int aver = (kor+eng+mat)/3;
-%>
+
 
 //dto객체에 담기
 dto.setUname(uname);

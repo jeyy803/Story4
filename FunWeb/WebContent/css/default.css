@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+/* index.jsp 사용자단 메인화면 ui */
+body{
+	background-color:white;/*배경색*/
+	margin:0;/*상하좌우 바깥여백설정*/
+	padding:0;/*상하좌우 안여백을 0픽셀로 함.안여백을 없
+	앰*/
+	font-size:0.75em;/*글자크기*/
+	line-height:1.2em;/*문자 수직간격*/
+	color:#333;/* 글자색, #333333색상에서 중복된 숫자 3을
+	한번으로 표현해도 된다. #333 */
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header{
+	height:151px;
+}
+#logo{
+	float:left;/*왼쪽정렬,복수개의 div를 수평정렬되게함.*/
+	 margin:60px 0px 0px 40px;
+}
+nav{
+	 margin:35px 20px 30px 0px;
+	
+}
+nav ul{
+	list-style:none;/* 목록 앞 점 없앰 */
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:18px;/*글자크기*/
+	font-weight:100;/*글자를 굵게 */
+	color:#333;/*글자색*/
+}
+nav li{
+	float:left;/* 목록 수직정렬을 수평정렬로 바꿈*/
+	margin:0px 5px; /*상하 바깥여백을 0픽셀,좌우 바깥여백
+	을 5픽셀 */
+	margin-left:2.5%;
+}
+nav a{/* 메뉴 하이퍼링크 된곳 css 효과 */
+    display: block; height:20px;
+    padding:10px; 
+    text-decoration: none;/*밑줄선 제거*/
+    color:#333;/*글자색*/	
+}
+nav a:hover{/*하이퍼링크 된곳 마우스 오버시 css 효과*/
+	background-image:url(../images/blue.gif);
+	background-repeat:repeat-x;/* x축으로 반복 */
+	background-position: bottom;
+}
+.clear{
+	clear:both;/* div간 잘못된 css적용을 막아줌.즉 div에
+	float:left;속성이 적용된 경우 빈공백으로 div레이아웃이
+	올라가는 현상이 발생하는 것을 방지한다.*/
+}
+#login{
+	float:right; margin:20px 64px 0 0;
+	font-family:"궁서체"; font-size:12px;
+	word-spacing: 5px;/* 글자 사이의 간격*/	
+}
+#login a{/*하이퍼링크 된곳 css 효과 */
+    text-decoration: none;/*원래 하이퍼링크가 걸리면 밑줄
+    선이 생긴다. 이 밑줄선을 제거하는 효과 */
+    color:#333;/*하이퍼링크 된곳 글자색 지정*/	
+}
+#login a:hover{/* 하이퍼링크 된곳 마우스 오버시 css효과*/
+	color:#F90;/* #FF9900과 같다.*/
+}
+
+/*메인 배경이미지 */
+
+
+/* index.jsp 메인 본문 */
+article#front{
+	margin:5px 0px 5px 0px;/*시계방향으로 위,오른쪽,아래,
+	왼쪽 바깥여백설정*/	
+}
+#solution{
+	border:1px solid blue;/*테두리 선두께를 1픽셀,solid
+	실선, blue 파랑색선*/
+	border-radius:10px;/*테두리를 둥글게*/
+     min-height:150px;/*최소높이*/
+    background:#ebebeb;/*배경색*/
+    padding:10px;/*상하좌우 안여백*/	
+    margin-left:20px;/*바깥 왼쪽 여백설정*/
+}
+#hosting,#security,#payment{
+   width:30%;/*상대크기*/
+   float:left;/*복수개의 div를 수평정렬로 바꿈*/
+   padding:10px;/*상하좌우 안여백 설정*/	
+}
+#hosting h3,#security h3,#payment h3{
+	font-family:"나눔고딕";
+	font-size:14px; 
+	font-weight: 600;/*글자를 굵고 진하게 */
+	color:#333;
+	margin:0 0 10px 80px;
+}
+#hosting p,#security p,#payment p{
+    font-family:"나눔고딕";
+    font-size:12px; color:red;
+    margin:0 0 0 80px;	
+}
+#hosting{
+    background-image: url("../images/icon1.png");
+    background-repeat: no-repeat;
+    background-position: left 15px;	
+    border-right:1px solid #ccc;/*오른쪽 구분선*/
+}
+#security{
+	background-image:url("../images/icon2.png");
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	border-right:1px solid #ccc;
+	margin-left:12px;
+}
+#payment{
+   background-image:url("../images/icon3.png");
+   background-repeat:no-repeat;
+   background-position: left 15px;	
+   margin-left:12px;
+}
+#sec_news,#news_notice{
+   float:left; width:420px;
+   margin:15px 0 0 20px;	
+}
+#sec_news h3,#news_notice h3{
+  font-family: "나눔고딕";
+  font-size:14px;
+  font-style:italic;/*기울임*/
+  font-weight:normal;
+  height:24px;
+  background-image:url("../images/h3_back.jpg");
+  background-repeat:no-repeat;
+  padding:5px 0 0 22px;	
+}
+#sec_news .orange{
+  color:#F26522;
+}
+#news_notice .brown{
+  color:#827b00;	
+}
+#sec_news dl{
+	margin-left:6px;
+}
+#sec_news dt{
+	font-family:"나눔고딕";
+	font-size:16px;
+	margin:5px 0px;/*상하 바깥여백은 5픽셀,좌우 바깥여백
+	은 0픽셀*/
+	color:#F00;
+}
+#sec_news dd{
+    margin-left:0;/*바깥 왼쪽 여백을 0픽셀로 처리*/
+    color:#333;	
+}
+#sec_news dt a{/*하이퍼링크 된곳 css적용 */
+	color:#F00;
+	text-decoration: none;
+	/*하이퍼링크 된곳 밑줄 선 없앰*/
+}
+#sec_news dt a:hover{/*하이퍼링크 된곳 마우스 오버시 css
+효과*/
+   color:#F90; 
+   text-decoration: underline;/*밑줄선을 나오게 함*/	
+}
+#sec_news dd a{
+	color:#333; text-decoration: none;
+}
+#sec_news dd a:hover{
+    color:#F90;	text-decoration: underline;
+}
+#news_notice table{
+	
+	border-collapse: collapse;/*과거에 table태그 속성인
+	cellspacing="0" cellpadding="0"을 주는 효과가 발생한
+	다.이말은 곧 셀간의 간격을 0픽셀,셀테두리와 셀내용간의
+	간격을 0픽셀=>결국 표테이블 테두리선을 없앤다.*/
+	text-align:center;/*글자 중앙 정렬 */
+}
+#news_notice td{
+    padding:6px 4px;
+    border-bottom-width: 1px;/*아래쪽 선두께를 1픽셀 */
+    border-bottom-style: dotted;/*아래쪽 점선*/
+    border-bottom-color:#999;/*아래쪽 선색*/	
+}
+#news_notice td.contxt{
+	background-image:url("../images/tr_back.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;/*좌측 안여백 설정*/
+	text-align: left;/*글자 왼쪽 정렬*/
+	color:#333;
+}
+#news_notice a{
+	color:#333; text-decoration: none;
+}
+#news_notice a:hover{
+	color:#F90; text-decoration: none;
+}
+
+footer{
+	margin:50px 0 0 0; height:80px;
+	background-image:url(../images/under_logo.gif);
+	background-repeat: no-repeat;
+	background-position: 40px center;
+}
+footer hr{
+	 margin:0 0 0 30px;
+}
+footer #copy{
+	font-family: "나눔고딕";
+    margin:20px 0 0 190px;
+    float:left;	
+}
+footer #social{
+     margin:20px 20px 0 0;
+    float:right;	
+}
+footer #social img{margin:0 7px;/*상하 바깥여백은 0픽셀,
+좌우 바깥여백은 7픽셀 */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
